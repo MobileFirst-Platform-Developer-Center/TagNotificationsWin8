@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="TagNotificationsWin8.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TagNotificationsWin8"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FFFBFAFA">
+
+        <Border x:Name="InfoPanel" Background="#FFFBFAFA">
+            <TextBlock x:Name="Info"  HorizontalAlignment="Left" Margin="630,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="635" Width="718" Foreground="#FF383737" FontSize="20" FontFamily="Segoe WP" Text="Windows 8 Native Tag and Broadcast notification" />
+        </Border>
+        <Border x:Name="ConsolePanel" Background="#FFFBFAFA">
+            <TextBlock x:Name="Console" HorizontalAlignment="Left" Margin="630,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="635" Width="718" Foreground="#FF383737" FontSize="20" FontFamily="Segoe WP"  DoubleTapped="ClearConsole"/>
+        </Border>
+
+
+        <Rectangle Fill="#FF3880C2" HorizontalAlignment="Left" Height="916" VerticalAlignment="Top" Width="598" Margin="0,0,0,-148"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="14,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="404" Width="564" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" FontSize="18" FontFamily="Segoe UI Semilight">
+        	<Run FontWeight="Bold" Text="Broadcast Notifications"/>
+        	<Run/>
+        	<LineBreak/>
+        	<LineBreak/>
+        	<Run Text="To receive a broadcast notification: right-click the PushAdapter folder in the studio, select the &quot;sendBroadcastNotifiication&quot; procedure and provide the notification text in quotation marks, for example: &quot;test notifications&quot;."/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run FontWeight="Bold" Text="Tag notifications"/>
+        	<LineBreak/>
+        	<LineBreak/>
+        	<Run Text="To receive a notification for a specifictag: first subscribe to a tag below, right-click the PushAdapter folder in the Studio, select the &quot;sendTagNotification&quot; procedure and provide the notificaiton text and tag name in quotation marks, for example: &quot;test notification&quot;, &quot;sample-tag1&quot; or to notify multiple tags: &quot;test notification&quot;,&quot;sample-tag1,sample-tag2&quot; ."/>
+        </TextBlock>
+
+        <TextBlock x:Name="ConsoleTab" HorizontalAlignment="Left" Margin="602,35,0,0" TextWrapping="Wrap" Text="Console" VerticalAlignment="Top" Height="45" Width="129" FontSize="21" FontFamily="Segoe UI Semilight" TextAlignment="Center" Tapped="ShowConsole" Foreground="DodgerBlue"/>
+        <TextBlock x:Name="InfoTab" HorizontalAlignment="Left" Margin="746,35,0,0" TextWrapping="Wrap" Text="Info" VerticalAlignment="Top" Height="45" Width="129" FontSize="21" FontFamily="Segoe UI Semilight"  Foreground="#FF5F5F5F" Tapped="ShowInfo"/>
+
+
+        <TextBlock HorizontalAlignment="Center" Margin="135,14,1069,0" TextWrapping="Wrap" Text="PushNotifications" VerticalAlignment="Top" FontSize="20" Width="162"/>
+        <Button x:Name="IsSubscribed" Content="isSubscribed" HorizontalAlignment="Left" Margin="143,458,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.512,-0.171" Height="50" Click="isSubscribed_Click" FontSize="16" Background="#FF8191C9" Foreground="#FFF9FBFF" Width="256" IsEnabled="False" FontFamily="Segoe UI Semilight"/>
+        <Button x:Name="SubscribeTag1" Content="Subscribe to sample-tag1" HorizontalAlignment="Left" Margin="143,517,0,0" VerticalAlignment="Top" Click="subscribeSampletag1_Click" FontSize="16" Height="53"  Background="#FF8191C9" Foreground="#FFF9FBFF" Width="256" IsEnabled="False" FontFamily="Segoe UI Semilight"/>
+        <Button x:Name="SubscribeTag2" Content="Subscribe to sample-tag2" HorizontalAlignment="Left" Margin="143,579,0,0" VerticalAlignment="Top" Click="subscribeSampletag2_Click" FontSize="16" Height="53"  Background="#FF8191C9" Foreground="#FFF9FBFF" Width="256" IsEnabled="False" FontFamily="Segoe UI Semilight" />
+        <Button x:Name="UnsubscribeTag1" Content="Unsubscribe from sample-tag1" HorizontalAlignment="Left" Margin="143,637,0,0" VerticalAlignment="Top" Click="unsubscribeSampletag1_Click" FontSize="16" Height="53"  Background="#FF8191C9" Foreground="#FFF9FBFF" IsEnabled="False" FontFamily="Segoe UI Semilight" />
+        <Button x:Name="UnsubscribeTag2" Content="Unsubscribe from sample-tag2" HorizontalAlignment="Left" Margin="143,696,0,0" VerticalAlignment="Top" Click="unsubscribeSampletag2_Click" FontSize="16" Height="53"  Background="#FF8191C9" Foreground="#FFF9FBFF" IsEnabled="False" FontFamily="Segoe UI Semilight" />
+
+
+    </Grid>
+</Page>
