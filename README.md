@@ -1,13 +1,20 @@
 IBM MobileFirst Platform Foundation
 ===
-### Sample Name
+### Tag-Based Notifications in Windows 8
 
 
 ### Usage
-Follow the instructions in the tutorials listed below.
+Follow the instructions in the tutorial(s) listed below.
 
 ### Tutorials
+**Push Notifications Overview**
+https://developer.ibm.com/mobilefirstplatform/documentation/getting-started-7-1/foundation/notifications/push-notifications-overview/
 
+**Push in Windows**
+https://developer.ibm.com/mobilefirstplatform/documentation/getting-started-7-1/foundation/notifications/push-notifications-overview/push-notification-native-windows-8-applications/
+
+**Tag-Based in Windows**
+https://developer.ibm.com/mobilefirstplatform/documentation/getting-started-7-1/foundation/notifications/push-notifications-overview/push-notification-native-windows-8-applications/tag-based-notifications-in-native-windows-8-applications/
 
 ### Supported Levels
 IBM MobileFirst Platform Foundation 7.1
