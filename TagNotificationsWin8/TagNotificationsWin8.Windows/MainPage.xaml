@@ -23,7 +23,7 @@
         <TextBlock x:Name="InfoTab" HorizontalAlignment="Left" Margin="746,35,0,0" TextWrapping="Wrap" Text="Info" VerticalAlignment="Top" Height="45" Width="129" FontSize="21" FontFamily="Segoe UI Semilight"  Foreground="#FF5F5F5F" Tapped="ShowInfo"/>
 
 
-        <TextBlock HorizontalAlignment="Center" Margin="126,14,1078,0" TextWrapping="Wrap" Text="PushNotifications" VerticalAlignment="Top" FontSize="20" Width="162"/>
+        <TextBlock HorizontalAlignment="Center" Margin="114,35,1090,0" TextWrapping="Wrap" Text="PushNotifications" VerticalAlignment="Top" FontSize="21" Width="162"/>
         <Button x:Name="IsSubscribed" Content="isSubscribed" HorizontalAlignment="Left" Margin="155,208,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.512,-0.171" Height="50" Click="isSubscribed_Click" FontSize="16" Background="#FF8191C9" Foreground="#FFF9FBFF" Width="256" IsEnabled="False" FontFamily="Segoe UI Semilight"/>
         <Button x:Name="SubscribeTag1" Content="Subscribe to sample-tag1" HorizontalAlignment="Left" Margin="155,267,0,0" VerticalAlignment="Top" Click="subscribeSampletag1_Click" FontSize="16" Height="53"  Background="#FF8191C9" Foreground="#FFF9FBFF" Width="256" IsEnabled="False" FontFamily="Segoe UI Semilight"/>
         <Button x:Name="SubscribeTag2" Content="Subscribe to sample-tag2" HorizontalAlignment="Left" Margin="155,329,0,0" VerticalAlignment="Top" Click="subscribeSampletag2_Click" FontSize="16" Height="53"  Background="#FF8191C9" Foreground="#FFF9FBFF" Width="256" IsEnabled="False" FontFamily="Segoe UI Semilight" />
